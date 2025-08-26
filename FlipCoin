@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flip a Coin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flip a Coin</h1>
+    <button onclick="flipCoin()">Flip!</button>
+    <div id="result"></div>
+
+    <script>
+        function flipCoin() {
+            const result = Math.random() < 0.5 ? "Heads" : "Tails";
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+</body>
+</html>
